@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.hw4.EditExpenseActivity">
+
+    <RelativeLayout
+        android:id="@+id/relLayoutAdd"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textViewhdr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_expense_hdr"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewhdr"
+            android:layout_marginTop="19dp"
+            android:text="@string/name_lbl"
+            android:textSize="16dp"
+            android:layout_alignRight="@+id/textViewReceipt"
+            android:layout_alignEnd="@+id/textViewReceipt"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/textViewCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewName"
+            android:layout_marginTop="19dp"
+            android:text="@string/cost_lbl"
+            android:textSize="16dp"
+            android:padding="3dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/date_lbl"
+            android:textSize="16dp"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/editTextCost"
+            android:padding="3dp"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewName"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+
+            android:textSize="16dp"
+            android:layout_alignLeft="@+id/buttonEditExpense"
+            android:layout_alignStart="@+id/buttonEditExpense" />
+
+        <EditText
+            android:id="@+id/editTextCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:layout_below="@+id/textViewCost"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_alignStart="@+id/editTextName"
+            android:layout_alignTop="@id/textViewCost"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_alignEnd="@+id/editTextName"
+            />
+
+        <Button
+            android:id="@+id/buttonPickADate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_a_date"
+            android:layout_below="@+id/editTextCost"
+            android:layout_alignRight="@+id/editTextCost"
+            android:layout_alignEnd="@+id/editTextCost"
+            android:layout_alignTop="@id/textViewdate"
+
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buttonPickADate"
+            android:layout_marginTop="21dp"
+            android:text="@string/receipt_lbl"
+            android:textSize="16dp"
+            android:padding="3dp"/>
+
+        <Button
+            android:id="@+id/buttonChooseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewReceipt"
+            android:layout_centerHorizontal="true"
+            android:text="@string/choose_an_image"
+            android:layout_alignTop="@id/textViewReceipt"
+            android:textSize="16dp"/>
+
+        <Button
+            android:id="@+id/buttonEditExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="@string/edit_expense"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonPickADate"
+            android:layout_alignBottom="@id/textViewdate"
+            android:layout_alignTop="@id/textViewdate"
+            android:layout_alignStart="@id/editTextCost"
+            android:textSize="16dp"
+            android:layout_alignLeft="@id/editTextCost" />
+
+        <ImageView
+            android:id="@+id/imageViewReceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_below="@+id/buttonChooseImage"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_alignLeft="@+id/buttonChooseImage"
+            android:layout_alignStart="@+id/buttonChooseImage"
+            android:layout_alignRight="@+id/buttonChooseImage"
+            android:layout_alignEnd="@+id/buttonChooseImage" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

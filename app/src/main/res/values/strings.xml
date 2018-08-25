@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HW4</string>
+    <string name="expenses_lbl">Expenses:</string>
+    <string name="exp_total_lbl">Total:</string>
+    <item name="tvMName" type="id" />
+    <item name="tvMCost" type="id" />
+    <item name="tvMDate" type="id" />
+    <item name="imgEdit" type="id" />
+    <string name="name_lbl">Name:</string>
+    <string name="cost_lbl">Cost:</string>
+    <string name="date_lbl">Date:</string>
+    <string name="pick_a_date">Pick a Date</string>
+    <string name="receipt_lbl">Receipt:</string>
+    <string name="choose_an_image">Choose an Image</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="edit_expense">Save Changes</string>
+    <string name="add_expense_hdr">Add Expense:</string>
+    <string name="edit_expense_hdr">Edit Expense:</string>
+    <string name="receipt">Receipt</string>
+    <string name="done">Done</string>
+</resources>
